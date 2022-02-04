@@ -1,7 +1,7 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'When a famous general was yelling at an undisciplined officer, general said: "I will show you your worse enemy!". When this "enemy" is at rest, it is actually up and not down as many think. What did general showed the officer?';
+	var question_text = 'When a famous general was yelling at an undisciplined officer, the general said: "I will show you your worst enemy!". When this "enemy" is at rest, it is actually up and not down as many think. What did the general show the officer?';
 	var correct_answer = 'Tongue';
 	var answer_explanation = 'General said to the undisciplined officer: "Tongue is your worst enemy". When tongue is at rest position it touches the TOP of your mouth, not the bottom (check it out).';
 
