@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'When a famous general was yelling at an undisciplined officer, the general said: "I will show you your worst enemy!". When this "enemy" is at rest, it is actually up and not down as many think. What did the general show the officer';
-	var correct_answer = 'Tongue';
-	var answer_explanation = 'General said to the undisciplined officer: "Tongue is your worst enemy". When tongue is at rest position it touches the TOP of your mouth, not the bottom (check it out).';
+	var question_text = 'Each one of them starts and ends with the same letter. Some scholars say that one of them was named after an Semitic Akkadian word for “where the sun sets”. Name that one. ';
+	var correct_answer = 'Europe';
+	var answer_explanation = 'Scholars point to the Akkadian word EROBU, meaning “sunset,” and reason that, from the Mesopotamian perspective, the western-setting sun descended on Europe.(west of Phoenicia, west of Bosphorus, Sea of Marmora). (Encyclopedia Britannica). Start and End with same letter: America, Antarctica, Asia, Australia, Africa, Europe.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
