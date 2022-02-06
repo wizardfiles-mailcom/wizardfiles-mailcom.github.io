@@ -1208,7 +1208,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                     this.shadowRoot.appendChild(Ka.content.cloneNode(!0)), this.$game = this.shadowRoot.querySelector("#game"), this.$board = this.shadowRoot.querySelector("#board"), this.$keyboard = this.shadowRoot.querySelector("game-keyboard"), this.sizeBoard(), this.lastPlayedTs || setTimeout((function() {
                         return e.showHelpModal()
                     }), 100);
-                    for (var a = 0; a < 7; a++) {
+                    for (var a = 0; a < 6; a++) {
                         var s = document.createElement("game-row");
                         s.setAttribute("letters", this.boardState[a]), s.setAttribute("length", 6), this.evaluations[a] && (s.evaluation = this.evaluations[a]), this.$board.appendChild(s)
                     }
