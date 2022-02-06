@@ -1,7 +1,7 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'This is one of the most popular spectator sports (#3 most popular according to WorldAtlas). The head of its biggest league and its players lobbied the IOC to include it in the 2020 Japan Olympics, but it was again rejected. Name that sport.';
+	var question_text = 'This is one of the most popular spectator sports (#3 most popular according to WorldAtlas). The head of its biggest league and its players lobbied the IOC to include it in the 2020 Japan Summer Olympics, but it was again rejected. Name that sport.';
 	var correct_answer = 'Hockey';
 	var answer_explanation = 'Gary Bettman, the head of NHL (National Hockey League), keeps trying to move Hockey to Summer Olympics since 1990-s as it interferes with NHL season, and technically can be played in any weather because it is indoors.';
 
