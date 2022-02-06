@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'Each one of them starts and ends with the same letter. Some scholars say that one of them was named after an Semitic Akkadian word for “where the sun sets”. Name that one. ';
-	var correct_answer = 'Europe';
-	var answer_explanation = 'Scholars point to the Akkadian word EROBU, meaning “sunset,” and reason that, from the Mesopotamian perspective, the western-setting sun descended on Europe.(west of Phoenicia, west of Bosphorus, Sea of Marmora). (Encyclopedia Britannica). Start and End with same letter: America, Antarctica, Asia, Australia, Africa, Europe.';
+	var question_text = 'This is one of the most popular spectator sports (#3 most popular according to WorldAtlas). The head of its biggest league and its players lobbied the IOC to include it in the 2020 Japan Olympics, but it was again rejected. Name that sport.';
+	var correct_answer = 'Hockey';
+	var answer_explanation = 'Gary Bettman, the head of NHL (National Hockey League), keeps trying to move Hockey to Summer Olympics since 1990-s as it interferes with NHL season, and technically can be played in any weather because it is indoors.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
