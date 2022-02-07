@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'This is one of the most popular spectator sports (#3 most popular according to WorldAtlas). The head of its biggest league and its players lobbied the IOC to include it in the 2020 Japan Summer Olympics, but it was again rejected. Name that sport.';
-	var correct_answer = 'Hockey';
-	var answer_explanation = 'Gary Bettman, the head of NHL (National Hockey League), keeps trying to move Hockey to Summer Olympics since 1990-s as it interferes with NHL season, and technically can be played in any weather because it is indoors.';
+	var question_text = 'The creator of the modern Olympic games, Pierre de Coubertin,  was not good at sports. However he won a gold Olympic medal (not honorary, but actually competed and won an Olympic competition). What did Coubertin create to win a gold medal in the 1912 Summer Olympic?';
+	var correct_answer = 'Poetry';
+	var answer_explanation = 'Literature was part of the Olympic competition from 1912 until 1948. Coubertin, the creator of modern Olympic Games, won the gold medal for literature himself in 1912 for his POEM Ode to Sport under the pseudonym of Georges Hohrod and M. Eschbach.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
