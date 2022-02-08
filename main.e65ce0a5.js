@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'The creator of the modern Olympic games, Pierre de Coubertin,  was not good at sports. However he won a gold Olympic medal (not honorary, but actually competed and won an Olympic competition). What did Coubertin create to win a gold medal in the 1912 Summer Olympic?';
-	var correct_answer = 'Poetry';
-	var answer_explanation = 'Literature was part of the Olympic competition from 1912 until 1948. Coubertin, the creator of modern Olympic Games, won the gold medal for literature himself in 1912 for his POEM Ode to Sport under the pseudonym of Georges Hohrod and M. Eschbach.';
+	var question_text = 'When the mother of one of the world’s top weightlifters, Israel Arsamakov, asked him why he is sitting on the couch instead of competing in the Olympics, he answered: “Because it is …” Finish his answer with 1 word.';
+	var correct_answer = 'Winter';
+	var answer_explanation = 'Weightlifting is part of the Summer Olympics while Israel and his mother were watching the Winter Olympics.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
