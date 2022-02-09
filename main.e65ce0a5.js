@@ -1696,7 +1696,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                         }
                                     })), d += "\n")
                                 })), {
-                                    text: "".concat(l, "Smart Wordle: http://www.intellectualcasino.com/smartwordle \n\n").concat(d.trimEnd())
+                                    text: "".concat(l, "Smart Wordle: http://SmartWordle.com \n\n").concat(d.trimEnd())
                                 }
                             }({
                                 evaluations: e.gameApp.evaluations,
