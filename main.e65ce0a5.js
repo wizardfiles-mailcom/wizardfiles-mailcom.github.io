@@ -1,7 +1,7 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'When the mother of one of the world&apos;s top weightlifters, Israel Arsamakov, asked him why he is sitting on the couch instead of competing in the Olympics, he answered: &quot;Because it is ...&quot; Finish his answer with 1 word.';
+	var question_text = 'When the mother of one of the world&apos;s top weightlifters, Israel Arsamakov, while watching live Olympics on TV, asked him why he is sitting on the couch instead of competing in the Olympics, he answered: &quot;Because it is ...&quot; Finish his answer with 1 word.';
 	var correct_answer = 'Winter';
 	var answer_explanation = 'Weightlifting is part of the Summer Olympics while Israel and his mother were watching the Winter Olympics.';
 
