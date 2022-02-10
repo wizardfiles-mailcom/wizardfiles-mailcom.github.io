@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'When the mother of one of the world&apos;s top weightlifters, Israel Arsamakov, while watching live Olympics on TV, asked him why he is sitting on the couch instead of competing in the Olympics, he answered: &quot;Because it is ...&quot; Finish his answer with 1 word.';
-	var correct_answer = 'Winter';
-	var answer_explanation = 'Weightlifting is part of the Summer Olympics while Israel and his mother were watching the Winter Olympics.';
+	var question_text = 'On December 7, 2010 he was inducted into the International Boxing Hall of Fame. As a boxer he never won a boxing title. Question: What is an alternate last name that he used as a boxer? ';
+	var correct_answer = 'Balboa';
+	var answer_explanation = 'Sylvester Stallone was voted into the International Boxing Hall of Fame for his role as boxer Rocky Balboa.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
@@ -1696,7 +1696,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                         }
                                     })), d += "\n")
                                 })), {
-                                    text: "".concat(l, "Smart Wordle: http://SmartWordle.com \n\n").concat(d.trimEnd())
+                                    text: "".concat(l, " Smart Wordle: http://SmartWordle.com \n\n").concat(d.trimEnd())
                                 }
                             }({
                                 evaluations: e.gameApp.evaluations,
