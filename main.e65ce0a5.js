@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'On December 7, 2010 he was inducted into the International Boxing Hall of Fame. As a boxer he never won a boxing title. Question: What is an alternate last name that he used as a boxer? ';
-	var correct_answer = 'Balboa';
-	var answer_explanation = 'Sylvester Stallone was voted into the International Boxing Hall of Fame for his role as boxer Rocky Balboa.';
+	var question_text = 'Fearless boxer Muhamad Ali almost missed the 1960 Olympic games for which he qualified because he got scared of  . . . what? ';
+	var correct_answer = 'Flying';
+	var answer_explanation = 'Ali almost missed the 1960 Rome Olympics because he was afraid of flights. He overcame his fear and acquired a gold medal, which was the turning point of his sports career.';
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
