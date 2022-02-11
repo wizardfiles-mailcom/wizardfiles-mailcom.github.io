@@ -1,9 +1,13 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'Fearless boxer Muhamad Ali almost missed the 1960 Olympic games for which he qualified because he got scared of  . . . what? ';
+	var question_text = 'Fearless boxer Muhamad Ali almost missed the 1960 Olympic games for which he qualified because he got scared of  . . . what?';
 	var correct_answer = 'Flying';
 	var answer_explanation = 'Ali almost missed the 1960 Rome Olympics because he was afraid of flights. He overcame his fear and acquired a gold medal, which was the turning point of his sports career.';
+	
+	var wordle_length = correct_answer.length; //6
+	var wordle_length_minus_one = wordle_length-1; //5
+	var wordle_length_plus_one = wordle_length+1; //7
 
     function a(e) {
         return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
@@ -235,7 +239,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     }(c(HTMLElement));
     customElements.define("game-tile", v);
     var w = document.createElement("template");
-    w.innerHTML = '\n  <style>\n    :host {\n      display: block;\n    }\n    :host([invalid]){\n      animation-name: Shake;\n      animation-duration: 600ms;\n    }\n    .row {\n      display: grid;\n      grid-template-columns: repeat(6, 1fr);\n      grid-gap: 5px;\n    }\n    .win {\n      animation-name: Bounce;\n      animation-duration: 1000ms;\n    }\n\n    @keyframes Bounce {\n      0%, 20% {\n        transform: translateY(0);\n      }\n      40% {\n        transform: translateY(-30px);\n      }\n      50% {\n        transform: translateY(5px);\n      }\n      60% {\n        transform: translateY(-15px);\n      }\n      80% {\n        transform: translateY(2px);\n      }\n      100% {\n        transform: translateY(0);\n      }\n    }\n\n    @keyframes Shake {\n      10%,\n      90% {\n        transform: translateX(-1px);\n      }\n\n      20%,\n      80% {\n        transform: translateX(2px);\n      }\n\n      30%,\n      50%,\n      70% {\n        transform: translateX(-4px);\n      }\n\n      40%,\n      60% {\n        transform: translateX(4px);\n      }\n    }\n  </style>\n  <div class="row"></div>\n';
+    w.innerHTML = '\n  <style>\n    :host {\n      display: block;\n    }\n    :host([invalid]){\n      animation-name: Shake;\n      animation-duration: 600ms;\n    }\n    .row {\n      display: grid;\n      grid-template-columns: repeat(' + wordle_length +', 1fr);\n      grid-gap: 1px;\n    }\n    .win {\n      animation-name: Bounce;\n      animation-duration: 1000ms;\n    }\n\n    @keyframes Bounce {\n      0%, 20% {\n        transform: translateY(0);\n      }\n      40% {\n        transform: translateY(-30px);\n      }\n      50% {\n        transform: translateY(5px);\n      }\n      60% {\n        transform: translateY(-15px);\n      }\n      80% {\n        transform: translateY(2px);\n      }\n      100% {\n        transform: translateY(0);\n      }\n    }\n\n    @keyframes Shake {\n      10%,\n      90% {\n        transform: translateX(-1px);\n      }\n\n      20%,\n      80% {\n        transform: translateX(2px);\n      }\n\n      30%,\n      50%,\n      70% {\n        transform: translateX(-4px);\n      }\n\n      40%,\n      60% {\n        transform: translateX(4px);\n      }\n    }\n  </style>\n  <div class="row"></div>\n';
     var x = function(e) {
         r(t, e);
         var a = h(t);
@@ -294,7 +298,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                             break
                         }
                         this.$tiles.forEach((function(e, a) {
-                            e.classList.add("win"), e.style.animationDelay = "".concat(100 * a, "ms")
+                            e.classList.add("win"), e.style.animationDelay= "".concat(100 * a, "ms")
                         }))
                 }
                 this._render()
@@ -944,9 +948,9 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     }(c(HTMLElement));
 
     function Ca() {
-        dataLayer.push(arguments)
+        datalayer.push(arguments)
     }
-    customElements.define("game-toast", Aa), window.dataLayer = window.dataLayer || [], Ca("js", new Date);
+    customElements.define("game-toast", Aa), window.datalayer = window.datalayer || [], Ca("js", new Date);
     Ca("config", "G-2SSGMHY3NP", {
         app_version: null === (Ea = window.wordle) || void 0 === Ea ? void 0 : Ea.hash,
         debug_mode: !1
@@ -993,7 +997,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     function Da(e) {
         var a, s = Ga(e);
 		return correct_answer.toLowerCase();
-        // return a = s % La.length, La[a]
+        // return a = s % la.length, la[a]
     }
 
     function Ga(e) {
@@ -1049,7 +1053,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
             }(o)
     }
     var Ka = document.createElement("template");
-    Ka.innerHTML = "\n  <style>\n  .toaster {\n    position: absolute;\n    top: 10%;\n    left: 50%;\n    transform: translate(-50%, 0);\n    pointer-events: none;\n    width: fit-content;\n  }\n  #game-toaster {\n    z-index: ".concat(1e3, ";\n  }\n  #system-toaster {\n    z-index: ").concat(4e3, ';\n  }\n\n  #game {\n    width: 100%;\n    max-width: var(--game-max-width);\n    margin: 0 auto;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n  header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: var(--header-height);\n    color: var(--color-tone-1);\n    border-bottom: 1px solid var(--color-tone-4);\n  }\n  header .title {\n    font-weight: 700;\n    font-size: 25px;\n    letter-spacing: 0.2rem;\n    text-transform: uppercase;\n    text-align: center;\n    position: absolute;\n    left: 0;\n    right: 0;\n    pointer-events: none;\n  }\n\n  @media (max-width: 360px) {\n    header .title {\n      font-size: 22px;\n      letter-spacing: 0.1rem;\n    }\n  }\n\n  #board-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    overflow: hidden;\n  }\n  #board {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    grid-gap: 5px;\n    padding:10px;\n    box-sizing: border-box;\n  }\n  button.icon {\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 0 4px;\n  }\n\n  #debug-tools {\n    position: absolute;\n    bottom: 0;\n  }\n\n  </style>\n  <game-theme-manager>\n    <div id="game">\n      <header>\n        <div class="menu">\n          <button id="help-button" class="icon" aria-label="help">\n            <game-icon icon="help"></game-icon>\n          </button>\n        </div>\n        <div class="title">\n         SMART WORDLE\n        </div>\n        <div class="menu">\n          <button id="statistics-button" class="icon" aria-label="statistics">\n            <game-icon icon="statistics"></game-icon>\n          </button>\n          <button id="settings-button" class="icon" aria-label="settings">\n            <game-icon icon="settings"></game-icon>\n          </button>\n        </div>\n   <div style="font-size:9px; position:absolute; top:0px;">by Jim Dukhovny and original by Josh Wardle</div>   </header>\n <div id="question-of-the-day" style="margin-top:5px; font-size:20px; font-family:helvectica"><b>Question:</b> ' + question_text + '  </div> <div id="board-container">\n          <div id="board"></div>\n        </div>\n        <game-keyboard></game-keyboard>\n        <game-modal></game-modal>\n        <game-page></game-page>\n        <div class="toaster" id="game-toaster"></div>\n        <div class="toaster" id="system-toaster"></div>\n    </div>\n  </game-theme-manager>\n  <div id="debug-tools"></div>\n');
+    Ka.innerHTML = "\n  <style>\n  .toaster {\n    position: absolute;\n    top: 10%;\n    left: 50%;\n    transform: translate(-50%, 0);\n    pointer-events: none;\n    width: fit-content;\n  }\n  #game-toaster {\n    z-index: ".concat(1e3, ";\n  }\n  #system-toaster {\n    z-index: ").concat(4e3, ';\n  }\n\n  #game {\n    width: 100%;\n    max-width: var(--game-max-width);\n    margin: 0 auto;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n  header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: var(--header-height);\n    color: var(--color-tone-1);\n    border-bottom: 1px solid var(--color-tone-4);\n  }\n  header .title {\n    font-weight: 700;\n    font-size: 25px;\n    letter-spacing: 0.2rem;\n    text-transform: uppercase;\n    text-align: center;\n    position: absolute;\n    left: 0;\n    right: 0;\n    pointer-events: none;\n  }\n\n  @media (max-width: 360px) {\n    header .title {\n      font-size: 22px;\n      letter-spacing: 0.1rem;\n    }\n  }\n\n  #board-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    overflow: hidden;\n  }\n  #board {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    grid-gap: 5px;\n    padding:10px;\n    box-sizing: border-box;\n  }\n  button.icon {\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 0 4px;\n  }\n\n  #debug-tools {\n    position: absolute;\n    bottom: 0;\n  }\n\n  </style>\n  <game-theme-manager>\n    <div id="game">\n      <header>\n        <div class="menu">\n          <button id="help-button" class="icon" aria-label="help">\n            <game-icon icon="help"></game-icon>\n          </button>\n        </div>\n        <div class="title">\n         SMART WORDLE\n        </div>\n        <div class="menu">\n          <button id="statistics-button" class="icon" aria-label="statistics">\n            <game-icon icon="statistics"></game-icon>\n          </button>\n          <button id="settings-button" class="icon" aria-label="settings">\n            <game-icon icon="settings"></game-icon>\n          </button>\n        </div>\n   <div style="font-size:9px; position:absolute; top:0px;">by Jim Dukhovny and original by Josh Wardle</div>   </header>\n <div id="question-of-the-day" style="margin-top:5px; padding:5px; font-size:20px; font-family:helvectica"><b>Question:</b> ' + question_text + '  </div> <div id="board-container">\n          <div id="board"></div>\n        </div>\n        <game-keyboard></game-keyboard>\n        <game-modal></game-modal>\n        <game-page></game-page>\n        <div class="toaster" id="game-toaster"></div>\n        <div class="toaster" id="system-toaster"></div>\n    </div>\n  </game-theme-manager>\n  <div id="debug-tools"></div>\n');
     var Qa = document.createElement("template");
     Qa.innerHTML = '\n<button id="reveal">reveal</button>\n<button id="shake">shake</button>\n<button id="bounce">bounce</button>\n<button id="toast">toast</button>\n<button id="modal">modal</button>\n';
     var Za = "IN_PROGRESS",
@@ -1082,7 +1086,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                     if (6 === this.tileIndex && !(this.rowIndex >= 7)) {
                         var e, a = this.$board.querySelectorAll("game-row")[this.rowIndex],
                             s = this.boardState[this.rowIndex];
-                        if (e = s, !Ta.includes(e) && !SixLetterWords.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Not in word list");
+                        if (e = s, !Ta.includes(e) && !SixLetterWords.includes(e) && !la.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Not in word list");
                         if (this.hardMode) {
                             var t = function(e, a, s) {
                                     if (!e || !a || !s) return {
@@ -1184,7 +1188,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                 key: "sizeBoard",
                 value: function() {
                     var e = this.shadowRoot.querySelector("#board-container"),
-                        a = Math.min(Math.floor(e.clientHeight * (6 / 7)), 350),
+                        a = Math.min(Math.floor(e.clientHeight * (6 / 7)), 380 + (wordle_length-6)*50),
                         s = 6 * Math.floor(a / 6);
                     this.$board.style.width = "".concat(a, "px"), this.$board.style.height = "".concat(s, "px")
                 }
@@ -1193,7 +1197,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                 value: function() {
                     var e = this.$game.querySelector("game-modal"),
                         a = document.createElement("game-stats");
-                    this.gameStatus === es && this.rowIndex <= 7 && a.setAttribute("highlight-guess", this.rowIndex), a.gameApp = this, e.appendChild(a), e.setAttribute("open", "")
+                    this.gameStatus === es && this.rowIndex <= wordle_length_plus_one && a.setAttribute("highlight-guess", this.rowIndex), a.gameApp = this, e.appendChild(a), e.setAttribute("open", "")
                 }
             }, {
                 key: "showHelpModal",
@@ -1210,13 +1214,13 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                     }), 100);
                     for (var a = 0; a < 6; a++) {
                         var s = document.createElement("game-row");
-                        s.setAttribute("letters", this.boardState[a]), s.setAttribute("length", 6), this.evaluations[a] && (s.evaluation = this.evaluations[a]), this.$board.appendChild(s)
+                        s.setAttribute("letters", this.boardState[a]), s.setAttribute("length", wordle_length), this.evaluations[a] && (s.evaluation = this.evaluations[a]), this.$board.appendChild(s)
                     }
                     this.$game.addEventListener("game-key-press", (function(a) {
                         var s = a.detail.key;
                         "←" === s || "Backspace" === s ? e.removeLetter() : "↵" === s || "Enter" === s ? e.submitGuess() : Ba.includes(s.toLowerCase()) && e.addLetter(s.toLowerCase())
                     })), this.$game.addEventListener("game-last-tile-revealed-in-row", (function(a) {
-                        e.$keyboard.letterEvaluations = e.letterEvaluations, e.rowIndex < 6 && (e.canInput = !0);
+                        e.$keyboard.letterEvaluations = e.letterEvaluations, e.rowIndex < wordle_length && (e.canInput = !0);
                         var s = e.$board.querySelectorAll("game-row")[e.rowIndex - 1];
                         (a.path || a.composedPath && a.composedPath()).includes(s) && ([es, as].includes(e.gameStatus) && (e.restoringFromLocalStorage ? e.showStatsModal() : (e.gameStatus === es && (s.setAttribute("win", ""), e.addToast(ss[e.rowIndex - 1], 2e3)), e.gameStatus === as && e.addToast(e.solution.toUpperCase(), 1 / 0), setTimeout((function() {
                             e.showStatsModal()
@@ -1382,7 +1386,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
       Permission to use, copy, modify, and/or distribute this software for any
       purpose with or without fee is hereby granted.
 
-      THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+      THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISClaIMS ALL WARRANTIES WITH
       REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
       AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
       INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
@@ -1484,7 +1488,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                     } finally {
                         s = o = 0
                     }
-                    if (5 & n[0]) throw n[1];
+                    if (wordle_length_minus_one & n[0]) throw n[1];
                     return {
                         value: n[0] ? n[1] : void 0,
                         done: !0
