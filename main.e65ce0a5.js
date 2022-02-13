@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'Fearless boxer Muhamad Ali almost missed the 1960 Olympic games for which he qualified because he got scared of  . . . what?';
-	var correct_answer = 'Flying';
-	var answer_explanation = 'Ali almost missed the 1960 Rome Olympics because he was afraid of flights. He overcame his fear and acquired a gold medal, which was the turning point of his sports career.';
+	var question_text = '(pre)Valentines Day puzzle. During a passionate kiss two of these are destroyed every minute.';
+	var correct_answer = 'Calorie';
+	var answer_explanation = 'During a really passionate kiss, you might burn two calories a minute -- double your metabolic rate.';
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
