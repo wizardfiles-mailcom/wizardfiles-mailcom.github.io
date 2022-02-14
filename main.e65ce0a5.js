@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = '(pre)Valentines Day puzzle. During a passionate kiss two of these are destroyed every minute.';
-	var correct_answer = 'Calorie';
-	var answer_explanation = 'During a really passionate kiss, you might burn two calories a minute -- double your metabolic rate.';
+	var question_text = 'On August 27, 2016, Jupiter and Venus merged into one point for earthly observers. Next time they will meet like this will be in another half a century. How do scientists call those meets between Jupiter and Venus?';
+	var correct_answer = 'Kisses';
+	var answer_explanation = 'Such an arrangement of cosmic bodies is figuratively called a kiss.';
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
