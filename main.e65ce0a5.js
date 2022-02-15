@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = 'On August 27, 2016, Jupiter and Venus merged into one point for earthly observers. Next time they will meet like this will be in another half a century. How do scientists call those meets between Jupiter and Venus?';
-	var correct_answer = 'Kisses';
-	var answer_explanation = 'Such an arrangement of cosmic bodies is figuratively called a kiss.';
+	var question_text = 'This is one of the strongest indications of who will win a U.S. Presidential Election. In the thirty-one presidential elections between 1900 and 2020, twenty-one of the winning candidates had this winning quality.';
+	var correct_answer = 'Height';
+	var answer_explanation = 'Tallest candidate won 21 out of 31 U.S. Presidential elections.';
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
