@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "On 7/71999, at an official tournament, Kenyan runner Noah Ngeni ran one mile in 3 minutes 43.30 seconds. It was almost 2 secs better than the world record, but Ngeni was not given a record. It had nothing to do with weather conditions or doping. The reason was that Noah Ngeni was …?";
-	var correct_answer = 'Second';
-	var answer_explanation = " Kenyan runner Ngeni came in second at the finish line and the world record was given to the winner.";
+	var question_text = "Some historians identify Robert’s enemy name as William de Wendenal, a late-12th-century Norman baron. Where did Robert usually live and 'work'?";
+	var correct_answer = 'Forest';
+	var answer_explanation = "Robin Hood (Robin is a diminutive of Robert) ) had an enemy Sheriff of Nottingham. Historians say the Sheriff of Nottingham might be based on William de Wendenal. (the date and Robert, should have been enough to answer the question though).";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
