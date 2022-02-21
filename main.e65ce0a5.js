@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "Some historians identify Robert’s enemy name as William de Wendenal, a late-12th-century Norman baron. Where did Robert usually live and 'work'?";
-	var correct_answer = 'Forest';
-	var answer_explanation = "Robin Hood (Robin is a diminutive of Robert) ) had an enemy Sheriff of Nottingham. Historians say the Sheriff of Nottingham might be based on William de Wendenal. (the date and Robert, should have been enough to answer the question though).";
+	var question_text = "According to Wikipedia there have been 262 of them (and probably more) but now, according to traditional definition only 1 remains. The first recorded one was in Egypt. What are we talking about?";
+	var correct_answer = 'Empire';
+	var answer_explanation = "The earliest known empire appeared in southern Egypt sometime around 3200 BC. Japan has an Emperor, and by classical definition, is still considered to be an empire.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
