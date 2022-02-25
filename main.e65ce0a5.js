@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "It is Feb. 20, 1947, an American rocket flies to space for the first time. On this flight are the first animals ever to fly in space and land back on Earth alive. Who were they?";
-	var correct_answer = 'Flies';
-	var answer_explanation = "It says so in the first sentence: flies is a subject, and rocket is a verb. Fruit flies were the first animals in space.";
+	var question_text = "In 1955 Jotto, then Lingo, then Bulls and Cows, and in 2020 … what?";
+	var correct_answer = 'Wordle';
+	var answer_explanation = "All are examples of games in similar fashion of guessing the letters of the word.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
