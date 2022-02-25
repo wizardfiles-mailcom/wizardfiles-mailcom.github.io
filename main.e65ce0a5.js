@@ -1,7 +1,7 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In 1955 Jotto, then Lingo, then Bulls and Cows, and in 2020 … what?";
+	var question_text = "In 1955 Jotto, then Lingo, then Bulls and Cows, and in 2020 . . .  what?";
 	var correct_answer = 'Wordle';
 	var answer_explanation = "All are examples of games in similar fashion of guessing the letters of the word.";
 	
