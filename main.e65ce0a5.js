@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In 1955 Jotto, then Lingo, then Bulls and Cows, and in 2020 . . .  what?";
-	var correct_answer = 'Wordle';
-	var answer_explanation = "All are examples of games in similar fashion of guessing the letters of the word.";
+	var question_text = "Shortcut for a Copy command is Ctrl+C. C - Copy. Shortcut for a Paste command is Ctrl+V. The reason why not Ctrl+P is …";
+	var correct_answer = 'Print';
+	var answer_explanation = "Ctrl+P was already taken by P for Print. So for Paste, they just took a letter next to C.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
