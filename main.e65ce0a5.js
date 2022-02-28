@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "Shortcut for a Copy command is Ctrl+C. C - Copy. Shortcut for a Paste command is Ctrl+V. The reason why not Ctrl+P is …";
-	var correct_answer = 'Print';
-	var answer_explanation = "Ctrl+P was already taken by P for Print. So for Paste, they just took a letter next to C.";
+	var question_text = "80% of all them were created in the last 22 months. Name that item.";
+	var correct_answer = 'Dollar';
+	var answer_explanation = "In the past 22 months US Federal Reserve, to offset economic impact, printed an amount of dollars equivalent to 80% of dollars ever in existance.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
