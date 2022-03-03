@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "80% of all them were created in the last 22 months. Name that item.";
-	var correct_answer = 'Dollar';
-	var answer_explanation = "In the past 22 months US Federal Reserve, to offset economic impact, printed an amount of dollars equivalent to 80% of dollars ever in existance.";
+	var question_text = "A British cookbook from 1861 includes a recipe for a sandwich with … what is the main ingredient inside this sandwich?";
+	var correct_answer = 'Toast';
+	var answer_explanation = "Recipe of a “sandwich with toast”, where between two pieces of bread you have another piece of bread (but toasted)";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
