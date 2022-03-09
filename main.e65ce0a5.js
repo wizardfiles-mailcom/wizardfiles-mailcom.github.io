@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "Sam Panopoulos immigrated from Greece to Canada. There he added fruit to a widely popular dish. Question: What was the brand name of that fruit, which we widely used today?";
-	var correct_answer = 'Hawaii';
-	var answer_explanation = "Sam Panopoulos, a Canadian Greek, invented a Hawaiian Pizza, by adding a pineapple (of the brand «Hawaii») to pizza";
+	var question_text = "In the state of New York it is forbidden to ask a person about this in a specific work environment.";
+	var correct_answer = 'Salary';
+	var answer_explanation = "During the interview process (a specific work environment) you cannot inquire about the salary.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
