@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In the state of New York it is forbidden to ask a person about this in a specific work environment.";
-	var correct_answer = 'Salary';
-	var answer_explanation = "During the interview process (a specific work environment) you cannot inquire about the salary.";
+	var question_text = "When Hatshepsut, one of Egypts pharaohs, was doing an official business, she had traditional attributes of the Egypts ruler: a head cloth, a rod, a scepter and . . . Question: name the fourth attribute which Hatshepsut had (and try to remember how she looked like because she often pictured with it)?";
+	var correct_answer = 'Beard';
+	var answer_explanation = "Even female pharaohs still sometimes used beards.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
