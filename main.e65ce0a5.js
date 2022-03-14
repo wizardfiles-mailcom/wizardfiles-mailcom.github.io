@@ -1,9 +1,10 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "When Hatshepsut, one of Egypts pharaohs, was doing an official business, she had traditional attributes of the Egypts ruler: a head cloth, a rod, a scepter and . . . Question: name the fourth attribute which Hatshepsut had (and try to remember how she looked like because she often pictured with it)?";
-	var correct_answer = 'Beard';
-	var answer_explanation = "Even female pharaohs still sometimes used beards.";
+	var question_text = "In some US houses built in the 1970s you can find an extremely thin special opening (it is about the height of a typical paper). This was done for disposing of a household item. Question: what items were disposed of into the walls of some 1970s houses?
+";
+	var correct_answer = 'Blades';
+	var answer_explanation = "Blades are not good to put into the garbage bag as it may rip it. But blades can live in the walls of the houses for hundreds of years.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
