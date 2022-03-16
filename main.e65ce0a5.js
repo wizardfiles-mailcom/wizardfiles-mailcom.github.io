@@ -1,10 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In some US houses built in the 1970s you can find an extremely thin special opening (it is about the height of a typical paper). This was done for disposing of a household item. Question: what items were disposed of into the walls of some 1970s houses?
-";
-	var correct_answer = 'Blades';
-	var answer_explanation = "Blades are not good to put into the garbage bag as it may rip it. But blades can live in the walls of the houses for hundreds of years.";
+	var question_text = "The Spanish and Portuguese royal houses name children who are heirs to the throne as ‘prince’ or ‘princess’. Question: how do Spanish and Portuguese royal houses name royal children which cannot become kings or queens?";
+	var correct_answer = 'Infant';
+	var answer_explanation = "‘Infant’ comes from latin ‘infans’ which means ‘unable to speak’. Hence royal children who cannot become kings and queens are named ‘infants’.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
