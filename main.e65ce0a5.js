@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "The Spanish and Portuguese royal houses name children who are heirs to the throne as ‘prince’ or ‘princess’. Question: how do Spanish and Portuguese royal houses name royal children which cannot become kings or queens?";
-	var correct_answer = 'Infant';
-	var answer_explanation = "‘Infant’ comes from latin ‘infans’ which means ‘unable to speak’. Hence royal children who cannot become kings and queens are named ‘infants’.";
+	var question_text = "In Swahili language, an East African language, a trip to see the wonders of nature is called … what?";
+	var correct_answer = 'Safari';
+	var answer_explanation = "‘Safari is just a word for a nature trip in Swahili language.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
