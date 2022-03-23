@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In Swahili language, an East African language, a trip to see the wonders of nature is called … what?";
-	var correct_answer = 'Safari';
-	var answer_explanation = "‘Safari is just a word for a nature trip in Swahili language.";
+	var question_text = "There are a number of ways to resolve an election if two or more candidates have the same number of votes. Question: What is the very last resort to resolve an election tie in South Dakota and New Jersey (which happened, for example, in South Dakota County Prosecutor elections)?";
+	var correct_answer = 'Poker';
+	var answer_explanation = "‘There are a number of instances in New Jersey and South Dakota when after an election tie candidates decided the outcome in a game of poker.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
