@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "There are a number of ways to resolve an election if two or more candidates have the same number of votes. Question: What is the very last resort to resolve an election tie in South Dakota and New Jersey (which happened, for example, in South Dakota County Prosecutor elections)?";
-	var correct_answer = 'Poker';
-	var answer_explanation = "‘There are a number of instances in New Jersey and South Dakota when after an election tie candidates decided the outcome in a game of poker.";
+	var question_text = "In 1954 a 4 kg meteorite went right through the roof of the house inside. This was the only time in history when a meteorite hit a . . . (finish this sentence with one word).";
+	var correct_answer = 'Human';
+	var answer_explanation = "‘On November 30, 1954, Ann Hodges was hit by a meteorite while sleeping in her house, as the meteorite went through the roof. She was bruised but totally OK.";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
