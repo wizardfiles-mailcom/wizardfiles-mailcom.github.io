@@ -1,9 +1,9 @@
 this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     "use strict";
 
-	var question_text = "In 1954 a 4 kg meteorite went right through the roof of the house inside. This was the only time in history when a meteorite hit a . . . (finish this sentence with one word).";
-	var correct_answer = 'Human';
-	var answer_explanation = "‘On November 30, 1954, Ann Hodges was hit by a meteorite while sleeping in her house, as the meteorite went through the roof. She was bruised but totally OK.";
+	var question_text = "What did some of the US States, from 1930 until recently, required you to give before you can marry someone?";
+	var correct_answer = 'Blood';
+	var answer_explanation = "In order to spread venereal (and other) diseases and not pass it to the next generations, some states required a blood test before you can marry someone";
 	
 	var wordle_length = correct_answer.length; //6
 	var wordle_length_minus_one = wordle_length-1; //5
